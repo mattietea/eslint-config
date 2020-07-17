@@ -3,7 +3,7 @@
 
 # @mattietea/eslint-config
 
-ESLint config for TypeScript and React with Prettier.
+ESLint rules and configs
 
 ## Installation
 

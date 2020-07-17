@@ -11,6 +11,10 @@ module.exports = {
 
     "plugin:@typescript-eslint/recommended",
 
+    'plugin:import/warnings',
+    'plugin:import/errors',
+    'plugin:import/typescript',
+
     "plugin:prettier/recommended",
 
     "prettier",
@@ -27,6 +31,19 @@ module.exports = {
         useTabs: false
       },
     ],
+
+    'import/order': [
+      'error',
+      {
+        groups: ['builtin', 'external', 'parent', 'sibling', 'index', 'object'],
+        'newlines-between': 'always',
+        alphabetize: {
+          order: 'asc',
+          caseInsensitive: true,
+        },
+      },
+    ],
+    'import/newline-after-import': ['error', { count: 1 }],
   },
 
 };
