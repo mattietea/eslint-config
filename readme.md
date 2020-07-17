@@ -1,5 +1,7 @@
 # @mattietea/eslint-config
 
+![publish package](https://github.com/mattietea/eslint-config/workflows/publish%20package/badge.svg?branch=master)
+
 ESLint config for TypeScript and React with Prettier.
 
 ## Installation
