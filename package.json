@@ -15,6 +15,9 @@
     "type": "git",
     "url": "https://github.com/mattietea/eslint-config"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "cp src/* ."
   },
