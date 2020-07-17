@@ -1,6 +1,7 @@
-# @mattietea/eslint-config
-
 ![publish package](https://github.com/mattietea/eslint-config/workflows/publish%20package/badge.svg?branch=master)
+![npm](https://img.shields.io/npm/v/@mattietea/eslint-config)
+
+# @mattietea/eslint-config
 
 ESLint config for TypeScript and React with Prettier.
 
@@ -9,8 +10,6 @@ ESLint config for TypeScript and React with Prettier.
 ```sh
 yarn add @mattietea/eslint-config -D
 ```
-
-See [configuring npm for use with GitHub Packages]("https://docs.github.com/en/packages/using-github-packages-with-your-projects-ecosystem/configuring-npm-for-use-with-github-packages#authenticating-to-github-packages") for help installing
 
 ## Config
 
