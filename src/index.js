@@ -1,49 +1,51 @@
 module.exports = {
-  parser: "@typescript-eslint/parser",
-
-  parserOptions: {
-    ecmaVersion: 2020,
-    sourceType: "module",
-  },
-
   extends: [
-    "eslint:recommended",
-
-    "plugin:@typescript-eslint/recommended",
-
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
     'plugin:import/warnings',
     'plugin:import/errors',
     'plugin:import/typescript',
-
-    "plugin:prettier/recommended",
-
-    "prettier",
-    "prettier/@typescript-eslint",
+    'plugin:prettier/recommended',
+    'plugin:promise/recommended',
+    'prettier',
+    'prettier/@typescript-eslint',
   ],
-
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 2020,
+    sourceType: 'module',
+  },
+  plugins: ['json-format', 'sort-keys-fix'],
   rules: {
-    "prettier/prettier": [
-      "error",
-      {
-        trailingComma: "all",
-        singleQuote: true,
-        tabWidth: 2,
-        useTabs: false
-      },
-    ],
-
+    'import/newline-after-import': ['error', { count: 1 }],
     'import/order': [
       'error',
       {
+        alphabetize: {
+          caseInsensitive: true,
+          order: 'asc',
+        },
         groups: ['builtin', 'external', 'parent', 'sibling', 'index', 'object'],
         'newlines-between': 'always',
-        alphabetize: {
-          order: 'asc',
-          caseInsensitive: true,
-        },
       },
     ],
-    'import/newline-after-import': ['error', { count: 1 }],
+    'padding-line-between-statements': [
+      'error',
+      { blankLine: 'always', next: 'return', prev: '*' },
+    ],
+    'prettier/prettier': [
+      'error',
+      {
+        singleQuote: true,
+        tabWidth: 2,
+        trailingComma: 'all',
+        useTabs: false,
+      },
+    ],
+    'sort-keys-fix/sort-keys-fix': [
+      'error',
+      'asc',
+      { caseSensitive: true, natural: false },
+    ],
   },
-
 };

@@ -1,34 +1,31 @@
 module.exports = {
+  extends: [
+    './index.js',
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:jsx-a11y/recommended',
+    'prettier/react',
+  ],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
   },
-
-  extends: [
-    "./index.js",
-
-    "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
-    "plugin:jsx-a11y/recommended",
-
-    "prettier/react",
-  ],
-
+  rules: {
+    'jsx-a11y/anchor-is-valid': [
+      'error',
+      {
+        aspects: ['invalidHref', 'preferButton'],
+      },
+    ],
+    'react/no-array-index-key': 'warning',
+    'react/no-unescaped-entities': 'off',
+    'react/prop-types': 'off',
+    'react/react-in-jsx-scope': 'off',
+  },
   settings: {
     react: {
-      version: "version",
+      version: 'version',
     },
   },
-
-  rules: {
-    'react/prop-types': 0,
-    'react/react-in-jsx-scope': 0,
-    'react/no-unescaped-entities': 0,
-
-    'jsx-a11y/anchor-is-valid': ['error', {
-      aspects: ['invalidHref', 'preferButton'],
-    }],
-  }
-
 };

@@ -2,9 +2,6 @@
   "name": "@mattietea/eslint-config",
   "version": "1.0.0",
   "description": "Matt Thomas' ESLint config",
-  "author": "Matthew Thomas",
-  "license": "MIT",
-  "main": "index.js",
   "keywords": [
     "eslint",
     "eslint-config",
@@ -15,29 +12,35 @@
     "type": "git",
     "url": "https://github.com/mattietea/eslint-config"
   },
-  "publishConfig": {
-    "access": "public"
-  },
+  "license": "MIT",
+  "author": "Matthew Thomas",
+  "main": "index.js",
   "scripts": {
     "build": "cp src/* ."
-  },
-  "peerDependencies": {
-    "eslint": "^7.4.0",
-    "typescript": "^3.9.7"
-  },
-  "devDependencies": {
-    "eslint": "^7.4.0",
-    "typescript": "^3.9.7"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^3.6.1",
     "@typescript-eslint/parser": "^3.6.1",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-json-format": "^2.0.1",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^4.0.8",
+    "eslint-plugin-sort-keys-fix": "^1.1.1",
     "prettier": "^2.0.5"
+  },
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "typescript": "^3.9.7"
+  },
+  "peerDependencies": {
+    "eslint": "^7.4.0",
+    "typescript": "^3.9.7"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
