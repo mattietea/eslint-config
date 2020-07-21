@@ -48,4 +48,7 @@ module.exports = {
       { caseSensitive: true, natural: false },
     ],
   },
+  settings: {
+    'json/json-with-comments-files': [],
+  },
 };
