@@ -13,7 +13,7 @@ yarn add @mattietea/eslint-config -D
 
 ## Config
 
-```json
+```jsonc
 // Base config
 {
   "extends": ["@mattietea/eslint-config"],
@@ -29,7 +29,7 @@ yarn add @mattietea/eslint-config -D
 
 Use the [VSCode ESLint](https://github.com/microsoft/vscode-eslint)
 
-```json
+```jsonc
 {
   "eslint.validate": [
     "javascript",
