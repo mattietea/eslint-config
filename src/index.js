@@ -17,6 +17,20 @@ module.exports = {
   },
   plugins: ['json-format', 'sort-keys-fix'],
   rules: {
+    '@typescript-eslint/array-type': [
+      'warn',
+      {
+        default: 'generic',
+      },
+    ],
+    '@typescript-eslint/consistent-type-assertions': [
+      'error',
+      {
+        assertionStyle: 'as',
+        objectLiteralTypeAssertions: 'allow',
+      },
+    ],
+    '@typescript-eslint/method-signature-style': 'error',
     'import/newline-after-import': ['error', { count: 1 }],
     'import/order': [
       'error',

@@ -13,14 +13,43 @@ yarn add @mattietea/eslint-config -D
 
 ## Config
 
-```javascript
+```json
 // Base config
 {
-  "extends": "@mattietea/eslint-config"
+  "extends": ["@mattietea/eslint-config"],
 }
 
 // React config
 {
-  "extends": "@mattietea/eslint-config/react"
+  "extends": ["@mattietea/eslint-config/react"],
 }
+```
+
+## VSCode Config
+
+Use the [VSCode ESLint](https://github.com/microsoft/vscode-eslint)
+
+```json
+{
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "json",
+    "jsonc"
+  ],
+
+  // On save settings
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+  },
+}
+```
+
+## Errors on Install
+
+```bash
+rm -rf node_modules yarn.lock && yarn 
 ```
