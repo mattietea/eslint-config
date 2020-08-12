@@ -2,7 +2,6 @@ module.exports = {
   extends: [
     './index.js',
     'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
     'plugin:jsx-a11y/recommended',
     'prettier/react',
   ],
@@ -11,6 +10,7 @@ module.exports = {
       jsx: true,
     },
   },
+  plugin: ['react-hooks'],
   rules: {
     'jsx-a11y/anchor-is-valid': [
       'error',
@@ -18,6 +18,8 @@ module.exports = {
         aspects: ['invalidHref', 'preferButton'],
       },
     ],
+    'react-hooks/exhaustive-deps': 'warn',
+    'react-hooks/rules-of-hooks': 'error',
     'react/jsx-boolean-value': ['warn', 'always'],
     'react/jsx-filename-extension': [
       'error',
