@@ -10,7 +10,7 @@ module.exports = {
       jsx: true,
     },
   },
-  plugin: ['react-hooks'],
+  plugins: ['react-hooks'],
   rules: {
     'jsx-a11y/anchor-is-valid': [
       'error',
