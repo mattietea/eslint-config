@@ -31,16 +31,10 @@ module.exports = {
     'react/jsx-max-depth': [
       'warn',
       {
-        max: 4,
+        max: 5,
       },
     ],
     'react/jsx-no-useless-fragment': 'error',
-    'react/jsx-one-expression-per-line': [
-      'warn',
-      {
-        allow: 'literal',
-      },
-    ],
     'react/jsx-sort-default-props': [
       'warn',
       {
