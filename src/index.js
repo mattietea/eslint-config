@@ -62,6 +62,14 @@ module.exports = {
       'asc',
       { caseSensitive: true, natural: false },
     ],
+    'unicorn/prevent-abbreviations': [
+      'error',
+      {
+        replacements: {
+          props: false,
+        },
+      },
+    ],
   },
   settings: {
     'json/json-with-comments-files': [],
