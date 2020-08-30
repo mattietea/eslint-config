@@ -4,6 +4,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:jsx-a11y/recommended',
     'prettier/react',
+    'plugin:mdx/recommended',
   ],
   parserOptions: {
     ecmaFeatures: {
