@@ -8,7 +8,7 @@ ESLint rules and configs
 ## Installation
 
 ```sh
-yarn add @mattietea/eslint-config -D
+yarn add eslint @mattietea/eslint-config -D
 ```
 
 ## Config
