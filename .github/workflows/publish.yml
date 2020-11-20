@@ -2,7 +2,8 @@ name: publish package
 on:
   push:
     branches:
-      - master
+      - main
+      - next
 jobs:
   publish:
     name: publish
@@ -14,7 +15,7 @@ jobs:
           node-version: 12
       - run: yarn install --frozen-lockfile
       - run: yarn build
-      - run: npx semantic-release
+      - run: npx semantic-release --branches next
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
