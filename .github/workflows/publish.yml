@@ -4,6 +4,7 @@ on:
     branches:
       - main
       - next
+      - master
 jobs:
   publish:
     name: publish
