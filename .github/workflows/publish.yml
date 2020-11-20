@@ -2,7 +2,8 @@ name: publish package
 on:
   push:
     branches:
-      - master
+      - main
+      - next
 jobs:
   publish:
     name: publish

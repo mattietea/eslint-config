@@ -11,6 +11,8 @@ ESLint rules and configs
 yarn add eslint @mattietea/eslint-config -D
 ```
 
+> `eslint`, `prettier` and `typescript` must also be installed
+
 ## Config
 
 ```jsonc
@@ -38,16 +40,11 @@ Use the [VSCode ESLint](https://github.com/microsoft/vscode-eslint)
     "typescriptreact",
     "json",
     "jsonc",
-    "yml",
-    "yaml",
     "mdx"
   ],
-
-  // On save settings
-  "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll": true,
-  },
+    "source.fixAll": true
+  }
 }
 ```
 
@@ -56,5 +53,5 @@ Use the [VSCode ESLint](https://github.com/microsoft/vscode-eslint)
 ## Errors on Install
 
 ```bash
-rm -rf node_modules yarn.lock && yarn 
+rm -rf node_modules yarn.lock && yarn
 ```
