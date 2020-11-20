@@ -48,8 +48,6 @@ Use the [VSCode ESLint](https://github.com/microsoft/vscode-eslint)
 }
 ```
 
-> ESLint will run formatting for Prettier - you should disable the VSCode Prettier extension if you have it installed.
-
 ## Errors on Install
 
 ```bash
