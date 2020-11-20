@@ -7,7 +7,6 @@ module.exports = {
     'plugin:import/typescript',
     'plugin:prettier/recommended',
     'plugin:promise/recommended',
-    'prettier',
     'prettier/@typescript-eslint',
     'plugin:unicorn/recommended',
   ],
