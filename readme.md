@@ -15,6 +15,8 @@ yarn add eslint @mattietea/eslint-config -D
 
 ## Config
 
+### eslintrc.json
+
 ```jsonc
 // Base config
 {
@@ -24,6 +26,18 @@ yarn add eslint @mattietea/eslint-config -D
 // React config
 {
   "extends": ["@mattietea/eslint-config/react"],
+}
+```
+
+### prettierrc.json
+
+```jsonc
+{
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "all",
+  "useTabs": false
 }
 ```
 
