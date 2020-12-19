@@ -32,13 +32,7 @@ yarn add eslint @mattietea/eslint-config -D
 ### prettierrc.json
 
 ```jsonc
-{
-  "semi": true,
-  "singleQuote": true,
-  "tabWidth": 2,
-  "trailingComma": "all",
-  "useTabs": false
-}
+"@mattietea/eslint-config/prettier"
 ```
 
 ## VSCode Config
