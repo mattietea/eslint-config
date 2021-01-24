@@ -72,6 +72,9 @@ module.exports = {
     ],
   },
   settings: {
+    'import/resolver': {
+      typescript: {},
+    },
     'json/json-with-comments-files': [],
   },
 };
