@@ -7,7 +7,7 @@ module.exports = {
     'plugin:import/typescript',
     'plugin:prettier/recommended',
     'plugin:promise/recommended',
-    'prettier/@typescript-eslint',
+    'prettier',
     'plugin:unicorn/recommended',
   ],
   parser: '@typescript-eslint/parser',
@@ -46,16 +46,6 @@ module.exports = {
     'padding-line-between-statements': [
       'error',
       { blankLine: 'always', next: 'return', prev: '*' },
-    ],
-    'prettier/prettier': [
-      'error',
-      {
-        semi: true,
-        singleQuote: true,
-        tabWidth: 2,
-        trailingComma: 'all',
-        useTabs: false,
-      },
     ],
     'sort-keys-fix/sort-keys-fix': [
       'error',
