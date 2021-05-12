@@ -24,9 +24,7 @@ module.exports = {
     'react/jsx-boolean-value': ['warn', 'always'],
     'react/jsx-filename-extension': [
       'error',
-      {
-        extensions: ['.jxs', '.tsx'],
-      },
+      { extensions: ['.js', '.jsx', '.ts', '.tsx', '.md', '.mdx'] },
     ],
     'react/jsx-handler-names': 'error',
     'react/jsx-max-depth': [
@@ -45,7 +43,7 @@ module.exports = {
     'react/jsx-sort-props': [
       'warn',
       {
-        callbacksLast: false,
+        callbacksLast: true,
         ignoreCase: false,
         noSortAlphabetically: false,
         reservedFirst: false,
