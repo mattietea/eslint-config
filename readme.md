@@ -13,6 +13,12 @@ yarn add eslint @mattietea/eslint-config -D
 
 > `eslint`, `prettier` and `typescript` must also be installed
 
+## Deploy
+
+```
+GH_TOKEN=xxx yarn lerna publish --npm-tag alpha --github-release
+```
+
 ## Config
 
 ### eslintrc.json
