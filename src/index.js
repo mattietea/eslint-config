@@ -52,6 +52,12 @@ module.exports = {
       'asc',
       { caseSensitive: true, natural: false },
     ],
+    'unicorn/no-array-reduce': [
+      'error',
+      {
+        allowSimpleOperations: true,
+      },
+    ],
     'unicorn/prevent-abbreviations': [
       'error',
       {
