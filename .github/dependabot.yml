@@ -13,7 +13,7 @@ updates:
       interval: 'weekly'
       day: 'sunday'
     commit-message:
-      prefix: fix
+      prefix: feat
       prefix-development: chore
       include: scope
     reviewers:
