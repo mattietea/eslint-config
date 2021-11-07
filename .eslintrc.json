@@ -2,7 +2,5 @@
   "env": {
     "node": true
   },
-  "extends": [
-    "./src/index.js"
-  ]
+  "extends": ["./src/index.js"]
 }
