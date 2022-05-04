@@ -15,7 +15,7 @@ module.exports = {
     ecmaVersion: 2020,
     sourceType: 'module',
   },
-  plugins: ['json-format', 'sort-keys-fix'],
+  plugins: ['json-format', 'sort-keys-fix', 'prefer-arrow-functions'],
   rules: {
     '@typescript-eslint/array-type': [
       'warn',
@@ -46,6 +46,15 @@ module.exports = {
     'padding-line-between-statements': [
       'error',
       { blankLine: 'always', next: 'return', prev: '*' },
+    ],
+    'prefer-arrow-functions/prefer-arrow-functions': [
+      'error',
+      {
+        classPropertiesAllowed: false,
+        disallowPrototype: false,
+        returnStyle: 'unchanged',
+        singleReturnOnly: false,
+      },
     ],
     'sort-keys-fix/sort-keys-fix': [
       'error',
