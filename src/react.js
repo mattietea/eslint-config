@@ -58,7 +58,7 @@ module.exports = {
   },
   settings: {
     react: {
-      version: 'version',
+      version: 'detect',
     },
   },
 };
