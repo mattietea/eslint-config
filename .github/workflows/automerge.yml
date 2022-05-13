@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Auto merge
-        uses: pascalgn/automerge-action@v0.15.2
+        uses: pascalgn/automerge-action@v0.15.3
         if: github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]'
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
